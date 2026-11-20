@@ -1,0 +1,1 @@
+@if($rows->hasPages())<div class="actions">@if($rows->previousPageUrl())<a href="{{ $rows->previousPageUrl() }}">Previous</a>@endif Page {{ $rows->currentPage() }} of {{ $rows->lastPage() }} @if($rows->nextPageUrl())<a href="{{ $rows->nextPageUrl() }}">Next</a>@endif</div>@endif
